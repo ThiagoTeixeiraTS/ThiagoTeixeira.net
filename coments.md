@@ -18,5 +18,10 @@ Gatsby Develop
 Para instalar o styled component
 npm install --save styled-components
 
+para o gatsby conseguir utilizar o styled components  precisamos instalar um plugin
+npm install gatsby-plugin-styled-components
+
+
+
 yarn add styled-components
 
