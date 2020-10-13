@@ -1,20 +1,20 @@
 import React from "react"
-import { Link } from "gatsby";
 
+import PostItem from "../components/PostItem"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Meu Site</h1>
-    <p>   
-     Usando Link  <Link to="/about">About</Link>
-    </p>
-    <p>   
-     Usando href  <a href="/about">About</a>
-    </p>
-    
+    <PostItem
+      slug="/about/"
+      category="Misc"
+      date="30 de Julho de 2019"
+      timeToRead="5"
+      title="Diga não ao Medium: tenha sua própria plataforma"
+      description="Algumas razões para você ter sua própria plataforma ao invés de soluções como o Medium."
+    />
   </Layout>
 )
 
