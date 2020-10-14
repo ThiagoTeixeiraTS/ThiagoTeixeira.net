@@ -8,9 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => {
   const { allMarkdownRemark } = useStaticQuery(graphql`
     query PostList {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
+            fields {
+              slug
+            }
             frontmatter {
               background
               category
@@ -35,10 +38,11 @@ const IndexPage = () => {
           node: {
             frontmatter: { background, category, date, description, title },
             timeToRead,
+            fields: { slug },
           },
         }) => (
           <PostItem
-            slug="/about/"
+            slug={slug}
             background={background}
             category={category}
             date={date}
