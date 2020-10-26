@@ -45,3 +45,7 @@ node -> Nó /item
 }
 }
 }
+
+prismjs -> Para postagem de codigos // Aula 51 Erro
+
+Disqus - > Comentario nos posts -
