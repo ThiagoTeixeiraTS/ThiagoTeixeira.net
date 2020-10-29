@@ -49,3 +49,6 @@ node -> Nó /item
 prismjs -> Para postagem de codigos // Aula 51 Erro
 
 Disqus - > Comentario nos posts -
+
+styled-media-query - > para deixar responsivo o site!
+yarn add styled-media-query
